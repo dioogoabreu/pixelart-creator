@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art - Creator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h2>Modo desenhar selecionado</h2>
+    </header>
+
+    <aside>
+        <h2>Ferramentas</h2>
+        <hr>
+        <section class="list_cards">
+            <div class="card" id="design">
+                <img src="./assets/desenhar.svg" alt="Desenhar">
+                <p>Desenhar</p>
+            </div>
+            <div class="card" id="rubber">
+                <img src="./assets/borracha.svg" alt="Borracha">
+                <p>Borracha</p>
+            </div>
+            <div class="card" id="fill">
+                <img src="./assets/pintar.svg" alt="Pintar">
+                <p>Pintar</p>
+            </div>
+        </section>
+        <section class="colors">
+            <h2>Cor: </h2>
+            <input type="color" id="color" name="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#323236"> 
+            <button id="save-color">Salvar</button>
+        </section>
+        <section class="color_pallete">
+            <div>
+                <h2>Paleta de cores:</h2>
+            </div>
+            <div class="list">
+                
+            </div>
+        </section>
+        <div>
+            <button id="remove-pixel">PIXELADO: ON/OFF</button>
+    </aside>
+
+    <main>
+        <div class="container">
+            <div class="pixel grade-pixel"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+}
+
+html {
+    font-size: 67.7%;
+    background: #52545A;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    padding: 2rem;
+    background: red;
+    width: 100vw;
+    z-index: 99;
+    text-align: center;
+    display: none;
+}
+
+/* Aside */
+
+#remove-pixel {
+    background: #4B7AF4;
+    border: 0;
+    border-radius: 4px;
+    padding: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 230px;
+    position: absolute;
+    top: 90%;
+}
+
+#remove-pixel {
+    background: 0;
+    border: 1px solid white;
+}
+
+button:hover, .list_cards .card:hover {
+    opacity: 0.9;
+}
+
+aside {
+    background: #2C2F34;
+    padding: 5rem 6rem 0 2rem;
+    height: 100vh;
+    width: fit-content;
+}
+
+.list_cards .card {
+    display: flex;
+    align-items: center;
+    background: #52545A;
+    padding: 0.7rem 2rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.list_cards .card p {
+    margin-left: 20px;
+}
+
+.colors {
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.colors input {
+    height: 30px;
+    width: 100px;
+    margin-left: 20px;
+}
+
+.colors button {
+    background: #4B7AF4;
+    border: 0;
+    border-radius: 4px;
+    padding: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.color_pallete h2 {
+    color: rgb(214, 214, 214);
+    font-size: 2rem;
+}
+
+.color_pallete .list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 220px;
+}
+
+.color_pallete .list div {
+    margin: 20px 5px 0 0;
+    background: red;
+    height: 25px;
+    width: 25px;
+}
+
+.color_pallete .list div:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Main */
+
+main {
+    height: 100vh;
+    margin-left: 306.64px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #52545A;
+}
+
+main .container {
+    width: 50vw;
+    height: 90vh;
+    background: #202024;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+/* Pixels */
+
+.pixel {
+    height: 32px;
+    width: 32px;
+}
+
+.pixel.grade-pixel {
+    border: 1px solid rgb(136, 136, 136);
+}
